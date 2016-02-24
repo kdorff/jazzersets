@@ -1,17 +1,17 @@
 # JazzerSets
 
-# Description
+## Description
 
 Jazzersets is a Chrome plugin for verify the composition of Jazzercise sets in Google Music.
 
-# Running unit tests
+## Running unit tests
 
 describe out to test
 
-# Building
+## Building
 
 Describe how to build
 
-# Testing inside Chrome
+## Testing inside Chrome
 
 Describe how to test inside Chrome
