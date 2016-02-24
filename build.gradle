@@ -1,0 +1,42 @@
+group   'org.dorff'
+version '0.1-SNAPSHOT'
+
+buildscript {
+    // So we can use $kotlin_version in specifying dependencies.
+    ext.kotlin_version = '1.0.0'
+
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+
+    dependencies {
+        // Kotlin support for Gradle
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+apply plugin: 'kotlin2js'
+apply plugin: 'groovy'
+apply plugin: 'cobertura'
+
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+    // Kotlin library and reflection stuff
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    // Testing
+    testCompile "org.jetbrains.kotlin:kotlin-test:$kotlin_version"
+    testCompile 'org.codehaus.groovy:groovy-all:2.4.5'
+    testCompile 'org.spockframework:spock-core:1.0-groovy-2.4'
+}
+
+// For ease of startup
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.11'
+}

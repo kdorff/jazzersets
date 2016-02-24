@@ -1,0 +1,13 @@
+*.iws
+*.iml
+*.idea
+stacktrace.log
+/*.zip
+/*.log
+/cobertura.ser
+._.DS_Store
+.DS_Store
+/out/
+/build/
+.classpath
+.gradle/
